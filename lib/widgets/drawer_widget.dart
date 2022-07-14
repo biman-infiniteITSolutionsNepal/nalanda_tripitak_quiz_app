@@ -1,4 +1,6 @@
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
+import 'package:nalanda_tripitak_quiz_app/utils/routes.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({Key? key}) : super(key: key);
@@ -83,7 +85,32 @@ class DrawerWidget extends StatelessWidget {
             ),
             ListTile
             (
-              onTap: () => {},
+              onTap: () async {
+                showDialog(
+                  context: context,
+                  builder: (ctx) => AlertDialog
+                  (
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(50.0))
+                    ),
+                    backgroundColor: Color(0xff354A33),
+                    contentTextStyle: TextStyle(color: Colors.white),
+                    title: Text("Logout", style: TextStyle(color: Colors.white),),
+                    content: Text("Do you wish to logout?"),
+                    actions: <Widget>
+                    [
+                      TextButton
+                      (
+                        onPressed: () 
+                        {
+                          Navigator.pushNamed(context, MyRoutes.landingRoute);
+                        },
+                        child: Text("yes", style: TextStyle(color: Colors.white,))
+                      ),
+                    ],
+                  ),
+                );
+              },
               horizontalTitleGap: 1,
               dense: true,
               leading: Icon(Icons.logout_outlined),

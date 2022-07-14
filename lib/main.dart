@@ -7,6 +7,7 @@ import 'package:nalanda_tripitak_quiz_app/screens/home_screen.dart';
 import 'package:nalanda_tripitak_quiz_app/screens/landing_screen.dart';
 import 'package:nalanda_tripitak_quiz_app/screens/otp_verification_screen.dart';
 import 'package:nalanda_tripitak_quiz_app/screens/quiz_level_screen.dart';
+import 'package:nalanda_tripitak_quiz_app/screens/quiz_screen.dart';
 import 'package:nalanda_tripitak_quiz_app/screens/quiz_settings_screen.dart';
 import 'package:nalanda_tripitak_quiz_app/screens/reset_password_screen.dart';
 import 'package:nalanda_tripitak_quiz_app/screens/sign_up_screen.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         "/changePassword": (context) => ChangePasswordScreen(),
         "/quizSettings":(context) => QuizSettingsScreen(),
         "/quizLevel":(context) => QuizLevelScreen(),
+        "/quiz":(context) => QuizScreen(),
       },
     );
   }

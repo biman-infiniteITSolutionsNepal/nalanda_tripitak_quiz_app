@@ -1,3 +1,4 @@
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 
 class TextButtonWidget extends StatelessWidget {
@@ -6,7 +7,7 @@ class TextButtonWidget extends StatelessWidget {
   final Color textColor;
   final Function onPressed;
 
-  const TextButtonWidget({
+  TextButtonWidget({
     required this.buttonText,
     required this.textColor,
     required this.onPressed,

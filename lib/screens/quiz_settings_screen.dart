@@ -1,3 +1,4 @@
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:group_radio_button/group_radio_button.dart';
 import 'package:nalanda_tripitak_quiz_app/widgets/heading_container_widget.dart';
