@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                 child: Divider(thickness: 2, color: Color(0xff042803),),
               ),
               SizedBox(height: height / 8,),
-              RoundedButtonWidget(buttonText: "Play Quiz", width: width, onpressed: () {Navigator.pushNamed(context, MyRoutes.quizSettingsRoute);}),
+              RoundedButtonWidget(buttonText: "Play Quiz", width: width, onpressed: () {Navigator.pushNamed(context, MyRoutes.quizLevelRoute);}),
               SizedBox(height: height / 10,),
               RoundedButtonWidget(buttonText: "View Leaderboard", width: width, onpressed: () {}),
             ]

@@ -8,5 +8,6 @@ class MyRoutes
   static String otpRoute = "/otp";
   static String changePasswordRoute = "/changePassword";
   static String quizSettingsRoute = "/quizSettings";
+  static String quizLevelRoute = "/quizLevel";
 
 }

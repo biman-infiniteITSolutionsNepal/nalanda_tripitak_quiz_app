@@ -68,6 +68,9 @@ flutter:
     - assets/images/logos/logo.png
     - assets/images/backgrounds/
     - assets/images/backgrounds/transparentBG.png
+    - assets/images/drawable/map_vertical_point.png
+    - assets/images/drawable/map_vertical.png
+    - assets/images/svg/map_vertical.svg
 
 
 
